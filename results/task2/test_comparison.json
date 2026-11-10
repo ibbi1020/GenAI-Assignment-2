@@ -1,0 +1,15 @@
+{
+  "split": "test",
+  "decoding": {
+    "method": "greedy",
+    "use_cache": true,
+    "temperature": 0,
+    "max_new_tokens": 128
+  },
+  "base_accuracy": 0.10679611650485436,
+  "adapter_accuracy": 0.6747572815533981,
+  "base_macro_f1": 0.14965496770622708,
+  "adapter_macro_f1": 0.49226888209581326,
+  "base_evidence_f1": 0.21358522814833494,
+  "adapter_evidence_f1": 0.7235535769516351
+}

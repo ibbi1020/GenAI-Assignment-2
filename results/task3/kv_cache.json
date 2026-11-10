@@ -1,0 +1,73 @@
+{
+  "model": "adapter",
+  "eos_disabled": true,
+  "reason": "EOS is disabled so both paths emit the requested number of tokens.",
+  "warmup": 1,
+  "device": "mps",
+  "pairs": [
+    {
+      "prompt_tokens": 32,
+      "new_tokens": 16,
+      "token_equal": false,
+      "mismatch": {
+        "index": 42,
+        "cached_token": 19,
+        "uncached_token": 20
+      },
+      "cached": {
+        "prefill_seconds": 0.05337762514439722,
+        "decode_seconds": 0.5349872640023629,
+        "tokens_per_second": 29.909274221381462,
+        "peak_memory_bytes": 3314352128,
+        "new_tokens": 16
+      },
+      "uncached": {
+        "prefill_seconds": 0.05549337489840885,
+        "decode_seconds": 0.9490754443686455,
+        "tokens_per_second": 16.897289728371742,
+        "peak_memory_bytes": 3314352128,
+        "new_tokens": 16
+      }
+    },
+    {
+      "prompt_tokens": 128,
+      "new_tokens": 32,
+      "token_equal": true,
+      "mismatch": null,
+      "cached": {
+        "prefill_seconds": 0.09836913893620174,
+        "decode_seconds": 1.032556749569873,
+        "tokens_per_second": 31.01855578180508,
+        "peak_memory_bytes": 3323789312,
+        "new_tokens": 32
+      },
+      "uncached": {
+        "prefill_seconds": 0.1127809442890187,
+        "decode_seconds": 4.52698045837072,
+        "tokens_per_second": 7.071250995486749,
+        "peak_memory_bytes": 4397531136,
+        "new_tokens": 32
+      }
+    },
+    {
+      "prompt_tokens": 512,
+      "new_tokens": 64,
+      "token_equal": true,
+      "mismatch": null,
+      "cached": {
+        "prefill_seconds": 0.28873699996620417,
+        "decode_seconds": 2.1743259789654985,
+        "tokens_per_second": 29.604153767404505,
+        "peak_memory_bytes": 4422696960,
+        "new_tokens": 64
+      },
+      "uncached": {
+        "prefill_seconds": 0.26904472953174263,
+        "decode_seconds": 23.769493021070957,
+        "tokens_per_second": 2.6925274293783725,
+        "peak_memory_bytes": 4389142528,
+        "new_tokens": 64
+      }
+    }
+  ]
+}

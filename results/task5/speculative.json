@@ -1,0 +1,69 @@
+{
+  "target": "adapter",
+  "draft": "Qwen/Qwen2.5-0.5B-Instruct",
+  "gamma": 4,
+  "max_new_tokens": 32,
+  "prompts": [
+    {
+      "prompt": "Patient note:\n0. A 58-year-old woman has chest pain.\n\nReturn JSON only.",
+      "token_equal": true,
+      "greedy_seconds": 1.5377110419794917,
+      "greedy_tokens_per_second": 20.810151664649865,
+      "speculative_seconds": 2.3201767920982093,
+      "speculative_tokens_per_second": 13.792052445736855,
+      "speedup": 0.6627559792928068,
+      "acceptance_rate": 0.6216216216216216,
+      "draft_proposed": 37,
+      "draft_accepted": 23,
+      "bonus_tokens": 5,
+      "peak_memory_bytes": 4396482560,
+      "new_tokens": 32
+    },
+    {
+      "prompt": "Summarize why a missing lab value is not proof of eligibility.",
+      "token_equal": false,
+      "greedy_seconds": 1.937709250021726,
+      "greedy_tokens_per_second": 16.514345482760746,
+      "speculative_seconds": 3.292002375004813,
+      "speculative_tokens_per_second": 9.720527616555323,
+      "speedup": 0.5886111336778403,
+      "acceptance_rate": 0.44680851063829785,
+      "draft_proposed": 47,
+      "draft_accepted": 21,
+      "bonus_tokens": 3,
+      "peak_memory_bytes": 4404871168,
+      "new_tokens": 32
+    },
+    {
+      "prompt": "List two reasons an exclusion criterion can be not applicable.",
+      "token_equal": true,
+      "greedy_seconds": 1.2902829591184855,
+      "greedy_tokens_per_second": 24.80076154912736,
+      "speculative_seconds": 1.5684621250256896,
+      "speculative_tokens_per_second": 20.40215029067143,
+      "speedup": 0.8226420890446124,
+      "acceptance_rate": 0.6666666666666666,
+      "draft_proposed": 36,
+      "draft_accepted": 24,
+      "bonus_tokens": 3,
+      "peak_memory_bytes": 4396482560,
+      "new_tokens": 32
+    },
+    {
+      "prompt": "Criterion type: inclusion\nCriterion: Age 18 to 65 years",
+      "token_equal": true,
+      "greedy_seconds": 1.3547995840199292,
+      "greedy_tokens_per_second": 23.61972972050254,
+      "speculative_seconds": 1.880015749949962,
+      "speculative_tokens_per_second": 17.0211339989315,
+      "speedup": 0.7206320394156209,
+      "acceptance_rate": 0.6216216216216216,
+      "draft_proposed": 37,
+      "draft_accepted": 23,
+      "bonus_tokens": 4,
+      "peak_memory_bytes": 4396482560,
+      "new_tokens": 32
+    }
+  ],
+  "note": "A speedup is not required. Token equality and the measured rate are the result."
+}

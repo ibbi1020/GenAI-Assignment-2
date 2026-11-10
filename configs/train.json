@@ -1,0 +1,14 @@
+{
+  "max_length": 1024,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "v_proj"],
+  "learning_rate": 0.0002,
+  "warmup_ratio": 0.03,
+  "grad_accum": 8,
+  "epochs": 3,
+  "patience": 2,
+  "max_new_tokens": 128,
+  "seed": 42
+}

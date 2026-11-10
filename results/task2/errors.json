@@ -1,0 +1,180 @@
+[
+  {
+    "error_category": "wrong_label",
+    "annotation_id": 164,
+    "patient_id": "sigir-201410",
+    "criterion_type": "inclusion",
+    "criterion_text": "Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)",
+    "gold_label": "not included",
+    "pred_label": "included",
+    "gold_sentences": [],
+    "pred_sentences": [
+      0
+    ],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [],
+    "quoted_pred_sentences": [
+      "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+    ],
+    "parse_error": null,
+    "why": "The predicted label does not match the expert label."
+  },
+  {
+    "error_category": "missing_information",
+    "annotation_id": 169,
+    "patient_id": "sigir-201410",
+    "criterion_type": "exclusion",
+    "criterion_text": "Patients with an estimated pre-operative glomerular filtration rate < 30mls/min/1.73m2",
+    "gold_label": "not enough information",
+    "pred_label": "not excluded",
+    "gold_sentences": [],
+    "pred_sentences": [],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [],
+    "quoted_pred_sentences": [],
+    "parse_error": null,
+    "why": "The expert label is not enough information. A missing fact is not treated as eligibility or ineligibility."
+  },
+  {
+    "error_category": "missed_gold_sentence",
+    "annotation_id": 185,
+    "patient_id": "sigir-201411",
+    "criterion_type": "inclusion",
+    "criterion_text": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+    "gold_label": "included",
+    "pred_label": "not enough information",
+    "gold_sentences": [
+      2,
+      3
+    ],
+    "pred_sentences": [],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [
+      "2. On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3. Her body temperature is normal and her blood pressure is 80/60."
+    ],
+    "quoted_pred_sentences": [],
+    "parse_error": null,
+    "why": "The predicted label does not match the expert label."
+  },
+  {
+    "error_category": "empty_gold_but_model_cited",
+    "annotation_id": 161,
+    "patient_id": "sigir-201410",
+    "criterion_type": "inclusion",
+    "criterion_text": "Patients undergoing elective carotid endarterectomy",
+    "gold_label": "not included",
+    "pred_label": "not included",
+    "gold_sentences": [],
+    "pred_sentences": [
+      0
+    ],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [],
+    "quoted_pred_sentences": [
+      "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+    ],
+    "parse_error": null,
+    "why": "The expert cited nothing, and the model cited a sentence. That citation is not treated as proof."
+  },
+  {
+    "error_category": "not_applicable_confusion",
+    "annotation_id": 683,
+    "patient_id": "sigir-20158",
+    "criterion_type": "exclusion",
+    "criterion_text": "Previous tonsillectomy, including partial tonsillectomy",
+    "gold_label": "not applicable",
+    "pred_label": "not excluded",
+    "gold_sentences": [],
+    "pred_sentences": [],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [],
+    "quoted_pred_sentences": [],
+    "parse_error": null,
+    "why": "The predicted label does not match the expert label."
+  },
+  {
+    "error_category": "additional_mismatch",
+    "annotation_id": 162,
+    "patient_id": "sigir-201410",
+    "criterion_type": "inclusion",
+    "criterion_text": "Patients undergoing open abdominal aortic aneurysm repair",
+    "gold_label": "not included",
+    "pred_label": "not included",
+    "gold_sentences": [],
+    "pred_sentences": [
+      0
+    ],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [],
+    "quoted_pred_sentences": [
+      "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+    ],
+    "parse_error": null,
+    "why": "The cited sentence ids do not match the expert citation."
+  },
+  {
+    "error_category": "additional_mismatch",
+    "annotation_id": 163,
+    "patient_id": "sigir-201410",
+    "criterion_type": "inclusion",
+    "criterion_text": "Patients undergoing endovascular abdominal aneurysm repair",
+    "gold_label": "not included",
+    "pred_label": "not included",
+    "gold_sentences": [],
+    "pred_sentences": [
+      0
+    ],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [],
+    "quoted_pred_sentences": [
+      "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+    ],
+    "parse_error": null,
+    "why": "The cited sentence ids do not match the expert citation."
+  },
+  {
+    "error_category": "additional_mismatch",
+    "annotation_id": 166,
+    "patient_id": "sigir-201410",
+    "criterion_type": "exclusion",
+    "criterion_text": "Significant upper limb peripheral arterial disease",
+    "gold_label": "not excluded",
+    "pred_label": "not excluded",
+    "gold_sentences": [],
+    "pred_sentences": [
+      1
+    ],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [],
+    "quoted_pred_sentences": [
+      "1. She is now complaining of a cool right foot."
+    ],
+    "parse_error": null,
+    "why": "The cited sentence ids do not match the expert citation."
+  },
+  {
+    "error_category": "truncation_would_drop_gold",
+    "annotation_id": 160,
+    "patient_id": "sigir-201410",
+    "criterion_type": "inclusion",
+    "criterion_text": "Patient willing to give full informed consent for participation",
+    "gold_label": "included",
+    "pred_label": "included",
+    "gold_sentences": [
+      3
+    ],
+    "pred_sentences": [
+      3
+    ],
+    "invalid_sentence_ids": [],
+    "quoted_gold_sentences": [
+      "3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    ],
+    "quoted_pred_sentences": [
+      "3. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    ],
+    "parse_error": null,
+    "why": "At the trained maximum length of 1024, no expert sentence id was dropped. If the prompt budget were 256 tokens, expert sentence ids [3] would fall outside the kept prefix."
+  }
+]

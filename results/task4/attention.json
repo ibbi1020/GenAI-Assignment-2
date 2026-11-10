@@ -1,0 +1,74 @@
+{
+  "cases": [
+    {
+      "batch": 1,
+      "heads": 1,
+      "seq": 8,
+      "dim": 16,
+      "block_size": 4,
+      "causal": true,
+      "repeats": 5,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 2.3686880012974143e-08,
+      "reference_seconds": 4.055821336805821e-05,
+      "tiled_seconds": 6.429161876440049e-05,
+      "note": "A pure PyTorch tiled loop moves one block at a time in Python. It is not expected to beat a fused attention kernel. The numbers are a correctness check and an honest runtime comparison."
+    },
+    {
+      "batch": 2,
+      "heads": 4,
+      "seq": 17,
+      "dim": 32,
+      "block_size": 8,
+      "causal": true,
+      "repeats": 5,
+      "max_abs_error": 5.960464477539062e-07,
+      "mean_abs_error": 4.4465423343353905e-08,
+      "reference_seconds": 4.6458421275019644e-05,
+      "tiled_seconds": 0.00013049161061644553,
+      "note": "A pure PyTorch tiled loop moves one block at a time in Python. It is not expected to beat a fused attention kernel. The numbers are a correctness check and an honest runtime comparison."
+    },
+    {
+      "batch": 1,
+      "heads": 2,
+      "seq": 64,
+      "dim": 64,
+      "block_size": 16,
+      "causal": true,
+      "repeats": 5,
+      "max_abs_error": 3.5762786865234375e-07,
+      "mean_abs_error": 2.733957060740977e-08,
+      "reference_seconds": 4.642498679459095e-05,
+      "tiled_seconds": 0.00018586660735309124,
+      "note": "A pure PyTorch tiled loop moves one block at a time in Python. It is not expected to beat a fused attention kernel. The numbers are a correctness check and an honest runtime comparison."
+    },
+    {
+      "batch": 1,
+      "heads": 2,
+      "seq": 64,
+      "dim": 64,
+      "block_size": 16,
+      "causal": false,
+      "repeats": 5,
+      "max_abs_error": 4.76837158203125e-07,
+      "mean_abs_error": 2.5677461934492385e-08,
+      "reference_seconds": 2.9700016602873804e-05,
+      "tiled_seconds": 0.00016596680507063866,
+      "note": "A pure PyTorch tiled loop moves one block at a time in Python. It is not expected to beat a fused attention kernel. The numbers are a correctness check and an honest runtime comparison."
+    },
+    {
+      "batch": 1,
+      "heads": 4,
+      "seq": 128,
+      "dim": 64,
+      "block_size": 32,
+      "causal": true,
+      "repeats": 5,
+      "max_abs_error": 4.76837158203125e-07,
+      "mean_abs_error": 2.7079623876602454e-08,
+      "reference_seconds": 0.0001352083869278431,
+      "tiled_seconds": 0.00041903341189026834,
+      "note": "A pure PyTorch tiled loop moves one block at a time in Python. It is not expected to beat a fused attention kernel. The numbers are a correctness check and an honest runtime comparison."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"""Score greedy criterion predictions."""

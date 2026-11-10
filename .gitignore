@@ -1,0 +1,36 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Recreated by scripts/prepare_data.py. The split manifest is kept.
+data/raw/
+data/processed/
+
+# Base weights are several gigabytes. scripts/download_models.py fetches them.
+models/
+
+# Epoch checkpoints stay local. The selected adapter is the submitted checkpoint.
+outputs/*
+!outputs/task1/
+outputs/task1/*
+!outputs/task1/adapter/
+!outputs/task1/adapter/**
+
+logs/
+node_modules/
+app/frontend/dist/
+dist/
+
+report/build/
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
